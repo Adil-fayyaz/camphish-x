@@ -1,4 +1,4 @@
-# CamPhish - Ignore captured data and temp files
+# Hack Cam - Created by Infinity x White Devels Team
 cam*.png
 !images/*.png
 saved.ip.txt
@@ -8,6 +8,7 @@ location_*.txt
 current_location.txt
 ip.txt
 sendlink
+share.txt
 serveo.log
 localhostrun.log
 Log.log

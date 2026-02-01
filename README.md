@@ -1,33 +1,32 @@
 <p align="center">
-  <img src="images/cam_phish_by_uzair.png" width="400" alt="CamPhish">
+  <img src="images/cam_phish_by_uzair.png" width="400" alt="Hack Cam">
 </p>
 
-<h1 align="center">CamPhish</h1>
+<h1 align="center">Hack Cam</h1>
 <p align="center">
-  <strong>Grab cam shots + GPS location from target's phone or PC — just send a link</strong>
+  <strong>Webcam + GPS capture — just send a link</strong>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-2.1-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Version-3.0-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Platform-Linux%20%7C%20Termux%20%7C%20macOS-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/License-GPL-blue?style=for-the-badge" />
 </p>
 
 <p align="center">
-  <strong>Created by Infinity x White Devels Team</strong><br>
-  <em>Based on TechChip | Modified by Uzair Developer</em>
+  <strong>Created by Infinity x White Devels Team</strong>
 </p>
 
 ---
 
-## 🎯 What is CamPhish?
+## 🎯 What is Hack Cam?
 
-**CamPhish** is a penetration testing tool that captures **webcam photos** and **GPS location** from a target's device by sending them a single link. The target opens the link, grants camera/location permission, and the data is captured in real-time.
+**Hack Cam** is a penetration testing tool that captures **webcam photos** and **GPS location** from a target's device by sending them a single link. The target opens the link, grants camera/location permission, and the data is captured in real-time.
 
-Unlike complex setups, CamPhish uses:
+Unlike complex setups, Hack Cam uses:
 - **Built-in PHP server** — no Apache/Nginx needed
 - **Free tunnels** (Serveo & localhost.run) — no ngrok account
-- **Interactive CLI** — hacker-style red interface, easy to use
+- **Interactive CLI** — Hack Cam interface, easy to use
 
 ---
 
@@ -39,7 +38,8 @@ Unlike complex setups, CamPhish uses:
 | 📍 **GPS Location** | Captures coordinates + Google Maps link |
 | 🌐 **IP & User-Agent** | Logs visitor IP and browser info |
 | 🎭 **3 Phishing Templates** | Festival Wishes (Indian/Islamic), Live YouTube TV, Online Meeting |
-| 🔗 **One-Click Link** | Copy link to clipboard automatically (if xclip/xsel installed) |
+| 🔗 **Inline Links** | Link displayed as "Join meeting: https://..." or "Celebrate [festival]: https://..." based on template |
+| 📋 **Share File** | Saves inline link to share.txt for easy copy-paste |
 | 🧹 **Cleanup Script** | Remove logs and captures with one command |
 
 ---
@@ -48,14 +48,13 @@ Unlike complex setups, CamPhish uses:
 
 ```
   ================================================================
-  #     ██████╗ █████╗ ███╗   ███╗██████╗ ██╗  ██╗██╗███████╗██╗  ██╗  #
-  #    ██╔════╝██╔══██╗████╗ ████║██╔══██╗██║  ██║██║██╔════╝██║  ██║  #
-  #    ██║     ███████║██╔████╔██║██████╔╝███████║██║███████╗███████║  #
-  #    ██║     ██╔══██║██║╚██╔╝██║██╔═══╝ ██╔══██║██║╚════██║██╔══██║  #
-  #    ╚██████╗██║  ██║██║ ╚═╝ ██║██║     ██║  ██║██║███████║██║  ██║  #
-  #     ╚═════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝  #
-  #   >>  Webcam + GPS Capture  |  v2.1  <<                              #
-  #   * Created by Infinity x White Devels Team                          #
+  #   _   _            _     _____                      #
+  #  | | | | __ _  ___| | __|_   _|__  __ _ _ __ ___    #
+  #  | |_| |/ _` |/ __| |/ /  | |/ _ \/ _` | '_ ` _ \   #
+  #  |  _  | (_| | (__|   <   | |  __/ (_| | | | | | |  #
+  #  |_| |_|\__,_|\___|_|\_\  |_|\___|\__,_|_| |_| |_|  #
+  #   >>  Webcam + GPS Capture  |  v3.0  <<              #
+  #   * Created by Infinity x White Devels Team          #
   ================================================================
 ```
 
@@ -94,7 +93,7 @@ bash camphish.sh
 
 ## 📖 Usage
 
-1. **Run the tool**
+1. **Run Hack Cam**
    ```bash
    bash camphish.sh
    ```
@@ -155,12 +154,9 @@ bash cleanup.sh
 
 ## 🙏 Credits
 
-| | |
-|---|---|
-| **Created by** | **Infinity x White Devels Team** |
-| Original author | TechChip — [techchip.net](https://techchip.net) |
-| Original repo | [github.com/techchipnet/camphish-x](https://github.com/techchipnet/camphish-x) |
-| Modified by | Uzair Developer |
+**Hack Cam** — Created by **Infinity x White Devels Team**
+
+Repository: [github.com/Adil-fayyaz/camphish-x](https://github.com/Adil-fayyaz/camphish-x)
 
 ---
 

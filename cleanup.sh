@@ -1,6 +1,6 @@
 #!/bin/bash
-# Cleanup script for CamPhish
-# Removes all unnecessary files and logs
+# Hack Cam - Cleanup script
+# Created by Infinity x White Devels Team
 
 echo "Starting cleanup of unnecessary files and logs..."
 
@@ -29,6 +29,9 @@ echo "Cleaning saved locations directory..."
 if [ -d "saved_locations" ]; then
     rm -f saved_locations/*
 fi
+
+# Remove share link file
+rm -f share.txt
 
 # Remove any other temporary files
 echo "Removing other temporary files..."

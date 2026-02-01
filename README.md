@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/cam_phish_by_uzair.png" width="400" alt="X Cam">
+  <img src="images/xcam.png" width="400" alt="X Cam">
 </p>
 
 <h1 align="center">X Cam</h1>
@@ -47,16 +47,15 @@ Unlike complex setups, X Cam uses:
 ## 📸 Screenshots
 
 ```
-  +----------------------------------------------------------------------+
-  |   \ \  / \ \  /     ____    _    __  __                              |
-  |    \ \/   \ \/     / ___|  / \  |  \/  |                             |
-  |     \     /       | |     / _ \ | |\/| |                             |
-  |    / \   / \      | |___ / ___ \| |  | |                             |
-  |   /_/\_\ /_/\_\    \____/_/   \_\_|  |_|                             |
-  |    [Infinity x White Devels Team]                                    |
-  |    Webcam + GPS Capture via Link • v3.0                              |
-  |    https://github.com/Adil-fayyaz/camphish-x                         |
-  +----------------------------------------------------------------------+
+  /*----------+----------\
+  |   ##   ##     ####   ###   ##  ##    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓          |
+  |    ## ##     ##  ##   ##   ##  ##    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒          |
+  |     ###      ######   ##   ######    ░░░░░░░░░░░░░░░░░          |
+  |    ## ##     ##  ##   ##   ##  ##    ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀          |
+  |   ##   ##     ####   ###   ##  ##    ▄▄▄▄▄▄▄▄▄▄▄▄▄             |
+  |    [Infinity x White Devels Team]                                  |
+  |    Webcam + GPS Capture via Link • v3.0                            |
+  \*----------+----------/
 ```
 
 ---
@@ -68,8 +67,8 @@ Unlike complex setups, X Cam uses:
 ```bash
 git clone https://github.com/Adil-fayyaz/camphish-x.git
 cd camphish-x
-bash install.sh
-bash camphish.sh
+bash xcam-install.sh
+bash xcam.sh
 ```
 
 ### Method 2: Manual Install
@@ -86,8 +85,8 @@ sudo apt update && sudo apt install -y php ssh
 pkg install php openssh
 
 # Run
-chmod +x camphish.sh cleanup.sh install.sh
-bash camphish.sh
+chmod +x xcam.sh xcam-cleanup.sh xcam-install.sh
+bash xcam.sh
 ```
 
 ---
@@ -96,7 +95,7 @@ bash camphish.sh
 
 1. **Run X Cam**
    ```bash
-   bash camphish.sh
+   bash xcam.sh
    ```
 
 2. **Choose tunnel** — Serveo (fast) or localhost.run (backup)
@@ -127,7 +126,7 @@ bash camphish.sh
 Remove all logs and captured data:
 
 ```bash
-bash cleanup.sh
+bash xcam-cleanup.sh
 ```
 
 ---

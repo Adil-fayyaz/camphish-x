@@ -24,7 +24,8 @@ Dalla cartella del progetto:
 ```bash
 cd "c:\Users\adil\Downloads\CamPhish-main\CamPhish-main"
 
-gh repo create camphish-x --public --source=. --remote=origin --push
+gh repo create camphish-x
+# X Cam tool - bash xcam.sh --public --source=. --remote=origin --push
 ```
 
 Questo crea il repo `camphish-x` (X Cam) sul tuo account GitHub e carica tutto.

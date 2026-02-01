@@ -66,8 +66,8 @@ Unlike complex setups, CamPhish uses:
 ### Method 1: One-Command Install (Recommended)
 
 ```bash
-git clone https://github.com/adilfayyaz/CamPhish.git
-cd CamPhish
+git clone https://github.com/Adil-fayyaz/camphish-x.git
+cd camphish-x
 bash install.sh
 bash camphish.sh
 ```
@@ -76,8 +76,8 @@ bash camphish.sh
 
 ```bash
 # Clone
-git clone https://github.com/adilfayyaz/CamPhish.git
-cd CamPhish
+git clone https://github.com/Adil-fayyaz/camphish-x.git
+cd camphish-x
 
 # Install dependencies (Debian/Ubuntu/Kali)
 sudo apt update && sudo apt install -y php ssh
@@ -159,7 +159,7 @@ bash cleanup.sh
 |---|---|
 | **Created by** | **Infinity x White Devels Team** |
 | Original author | TechChip — [techchip.net](https://techchip.net) |
-| Original repo | [github.com/techchipnet/CamPhish](https://github.com/techchipnet/CamPhish) |
+| Original repo | [github.com/techchipnet/camphish-x](https://github.com/techchipnet/camphish-x) |
 | Modified by | Uzair Developer |
 
 ---

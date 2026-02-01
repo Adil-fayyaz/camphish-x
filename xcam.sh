@@ -38,22 +38,19 @@ check_windows() {
 check_windows
 banner() {
     clear
+    printf "\n\n"
+    printf "\e[0m  \e[1;94m██\e[0m \e[1;94m██\e[0m      \e[0;94m█████\e[0m   \e[0;96m████\e[0m   \e[0;96m██\e[0m \e[1;95m██\e[0m\e[0m\n"
+    printf "\e[0m   \e[1;94m██\e[0m\e[0;94m██\e[0m      \e[0;94m██\e[0m \e[0;94m██\e[0m   \e[0;96m██\e[0m \e[0;96m██\e[0m   \e[1;95m██\e[0m \e[1;95m██\e[0m\e[0m\n"
+    printf "\e[0m    \e[0;94m██\e[0m       \e[0;94m██\e[0m \e[0;94m██\e[0m   \e[0;96m██████\e[0m   \e[1;95m██████\e[0m\e[0m\n"
+    printf "\e[0m   \e[0;94m██\e[0m\e[0;94m██\e[0m      \e[0;96m██\e[0m \e[0;96m██\e[0m   \e[0;96m██\e[0m \e[0;96m██\e[0m   \e[1;95m██\e[0m \e[1;95m██\e[0m\e[0m\n"
+    printf "\e[0m  \e[0;94m██\e[0m  \e[0;94m██\e[0m     \e[0;96m█████\e[0m   \e[1;95m██\e[0m \e[1;95m██\e[0m   \e[1;95m██\e[0m \e[1;95m██\e[0m\e[0m\n"
+    printf "\e[0m  \e[0;94m█\e[0m\e[0;94m▓\e[0m\e[0;94m█\e[0m \e[0;94m▓\e[0m\e[0;96m▓\e[0m\e[0;96m▒\e[0m\e[0;96m▒\e[0m\e[0;96m░\e[0m\e[1;95m░\e[0m \e[1;95m█\e[0m\e[1;95m▓\e[0m\e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m\e[1;95m░\e[0m \e[1;95m█\e[0m\e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m \e[1;95m▓▓\e[0m\e[1;95m▒▒\e[0m\e[1;95m░░\e[0m \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m\e[0m\n"
+    printf "\e[0m   \e[0;94m▓\e[0m\e[0;96m▒\e[0m\e[0;96m░\e[0m \e[0;96m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m   \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m  \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m   \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m\e[0m\n"
+    printf "\e[0m    \e[0;96m░\e[0m  \e[1;95m░\e[0m    \e[1;95m░\e[0m   \e[1;95m░\e[0m    \e[1;95m░\e[0m  \e[1;95m░\e[0m\e[0m\n"
     printf "\n"
-    printf "\e[1;91m  /*\e[0;31m+\e[1;91m------------------------------+\e[0;31m*\e[1;91m\\\e[0m\n"
-    printf "\e[1;91m  |\e[0m                                                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m  \e[1;91m##  ##\e[0m     \e[0;91m#####\e[0m   \e[0;95m###\e[0m   \e[0;95m##  ##\e[0m                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m  \e[1;91m ## ##\e[0m     \e[0;91m##  ##\e[0m   \e[0;95m##\e[0m   \e[0;95m##  ##\e[0m                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m  \e[1;91m  ####\e[0m     \e[0;91m##  ##\e[0m   \e[0;95m##\e[0m   \e[0;35m######\e[0m                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m  \e[1;91m ## ##\e[0m     \e[0;95m##  ##\e[0m   \e[0;95m##\e[0m   \e[0;35m##  ##\e[0m                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m  \e[1;91m##  ##\e[0m     \e[0;95m#####\e[0m   \e[0;35m###\e[0m   \e[0;35m##  ##\e[0m                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m  \e[0;91m#\e[0m \e[0;91m#\e[0m \e[0;95m▓▓\e[0m \e[0;95m▒▒\e[0m \e[0;35m░\e[0m \e[0;35m#\e[0m \e[0;35m▓\e[0m \e[0;35m▒\e[0m \e[0;35m░\e[0m \e[0;35m▓▓\e[0m \e[0;35m▒▒\e[0m \e[0;35m░░\e[0m \e[0;35m▓\e[0m \e[0;35m▒\e[0m \e[0;35m░\e[0m                                \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m  \e[0;91m ▓\e[0m \e[0;95m▒\e[0m \e[0;95m░\e[0m \e[0;35m ▓\e[0m \e[0;35m▒\e[0m \e[0;35m░\e[0m   \e[0;35m▓\e[0m \e[0;35m▒\e[0m \e[0;35m░\e[0m \e[0;35m ▓\e[0m \e[0;35m▒\e[0m \e[0;35m░\e[0m                                \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m                                                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0;35m    \e[0;90m[Infinity x White Devels Team]\e[0m                                   \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  |\e[0m                                                              \e[1;91m|\e[0m\n"
-    printf "\e[1;91m  \\\e[0;31m*\e[1;91m+\e[0;31m------------------------------+\e[1;91m*/\e[0m\n"
-    printf "\e[0;95m       Simple 'CLI' Webcam + GPS Capture via Link • v3.0\e[0m\n"
-    printf "\e[0;90m       [https://github.com/Adil-fayyaz/camphish-x]\e[0m\n\n"
+    printf "\e[0;96m       [Infinity x White Devels Team]\e[0m\n"
+    printf "\e[0;95m       Webcam + GPS Capture via Link • v3.0\e[0m\n"
+    printf "\e[0;90m       https://github.com/Adil-fayyaz/camphish-x\e[0m\n\n"
 }
 dependencies() {
     if ! command -v php > /dev/null 2>&1; then

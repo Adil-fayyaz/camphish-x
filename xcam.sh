@@ -39,18 +39,24 @@ check_windows
 banner() {
     clear
     printf "\n"
-    printf "\e[0m   \e[1;94m███\e[0m   \e[1;94m███\e[0m  \e[0;94m██\e[0m   \e[0;94m██\e[0m      \e[0;96m███████\e[0m   \e[0;96m█████\e[0m   \e[0;96m█████\e[0m   \e[1;95m███\e[0m   \e[1;95m███\e[0m\e[0m\n"
-    printf "\e[0m   \e[1;94m███\e[0m \e[0;94m███\e[0m   \e[0;94m██ ██\e[0m      \e[0;94m██\e[0m   \e[0;94m██\e[0m   \e[0;96m██\e[0m   \e[0;96m██\e[0m   \e[1;95m███\e[0m \e[1;95m███\e[0m\e[0m\n"
-    printf "\e[0m   \e[0;94m██\e[0m \e[0;94m█\e[0m \e[0;94m██\e[0m    \e[0;94m██\e[0m       \e[0;94m██\e[0m   \e[0;94m██\e[0m   \e[0;96m████████\e[0m   \e[1;95m███\e[0m\e[0m\n"
-    printf "\e[0m   \e[0;94m██\e[0m   \e[0;94m██\e[0m    \e[0;94m██\e[0m       \e[0;94m██\e[0m   \e[0;94m██\e[0m   \e[0;96m██\e[0m   \e[0;96m██\e[0m   \e[1;95m███\e[0m \e[1;95m███\e[0m\e[0m\n"
-    printf "\e[0m   \e[0;94m██\e[0m   \e[0;94m██\e[0m    \e[0;96m██\e[0m       \e[0;96m███████\e[0m   \e[0;96m██\e[0m   \e[0;96m██\e[0m   \e[1;95m███\e[0m   \e[1;95m███\e[0m\e[0m\n"
-    printf "\e[0m    \e[0;94m█\e[0m\e[0;94m▓\e[0m\e[0;94m█\e[0m \e[0;94m▓\e[0m\e[0;96m▓\e[0m\e[0;96m▒\e[0m\e[0;96m▒\e[0m\e[0;96m░\e[0m\e[1;95m░\e[0m \e[1;95m█\e[0m\e[1;95m▓\e[0m\e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m\e[1;95m░\e[0m \e[1;95m█\e[0m\e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m \e[1;95m▓▓▓\e[0m\e[1;95m▒▒▒\e[0m\e[1;95m░░░\e[0m \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m\e[0m\n"
-    printf "\e[0m     \e[0;94m▓\e[0m\e[0;96m▒\e[0m\e[0;96m░\e[0m \e[0;96m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m   \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m  \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m   \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m \e[1;95m▓\e[0m\e[1;95m▒\e[0m\e[1;95m░\e[0m\e[0m\n"
-    printf "\e[0m      \e[0;96m░\e[0m  \e[1;95m░\e[0m    \e[1;95m░\e[0m   \e[1;95m░\e[0m    \e[1;95m░\e[0m  \e[1;95m░\e[0m\e[0m\n"
-    printf "\n"
-    printf "\e[0;96m          [Infinity x White Devels Team]\e[0m\n"
-    printf "\e[0;95m          Webcam + GPS Capture via Link • v3.0\e[0m\n"
-    printf "\e[0;90m          https://github.com/Adil-fayyaz/camphish-x\e[0m\n\n"
+    printf "\e[1;91m  /*\e[1;31m++\e[0;31m---------------------------------\e[1;31m++\e[1;91m*\e[0;31m\\\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m+\e[0m                                                                \e[1;31m+\e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[1;91m####  ####\e[0m     \e[1;91m#######\e[0m   \e[1;95m#####\e[0m   \e[1;95m####  ####\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[1;91m ####  ####\e[0m    \e[1;91m###  ###\e[0m   \e[1;95m## ##\e[0m   \e[1;95m####  ####\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[1;91m  ########\e[0m     \e[0;91m###  ###\e[0m   \e[1;95m##  #\e[0m   \e[1;95m##########\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[1;91m ####  ####\e[0m    \e[0;91m###  ###\e[0m   \e[0;95m##  #\e[0m   \e[0;95m####  ####\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[1;91m####  ####\e[0m     \e[0;95m#######\e[0m   \e[0;95m#####\e[0m   \e[0;35m####  ####\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[1;91m##\e[0m \e[1;91m##\e[0m \e[0;91m##\e[0m \e[0;91m##\e[0m     \e[0;91m##\e[0m \e[0;91m##\e[0m \e[0;91m##\e[0m   \e[0;95m##\e[0m \e[0;95m##\e[0m   \e[0;95m##\e[0m \e[0;35m##\e[0m \e[0;35m##\e[0m \e[0;35m##\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[1;91m▓▓\e[0m \e[0;91m▓▓\e[0m \e[0;91m▓▓\e[0m \e[0;91m▓▓\e[0m     \e[0;91m▓▓\e[0m \e[0;91m▓▓\e[0m \e[0;95m▓▓\e[0m   \e[0;95m▓▓\e[0m \e[0;95m▓▓\e[0m   \e[0;95m▓▓\e[0m \e[0;35m▓▓\e[0m \e[0;35m▓▓\e[0m \e[0;35m▓▓\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[0;91m▒▒\e[0m \e[0;91m▒▒\e[0m \e[0;91m▒▒\e[0m \e[0;91m▒▒\e[0m     \e[0;91m▒▒\e[0m \e[0;95m▒▒\e[0m \e[0;95m▒▒\e[0m   \e[0;95m▒▒\e[0m \e[0;95m▒▒\e[0m   \e[0;95m▒▒\e[0m \e[0;35m▒▒\e[0m \e[0;35m▒▒\e[0m \e[0;35m▒▒\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m   \e[0;91m░░\e[0m \e[0;91m░░\e[0m \e[0;91m░░\e[0m \e[0;91m░░\e[0m     \e[0;95m░░\e[0m \e[0;95m░░\e[0m \e[0;95m░░\e[0m   \e[0;95m░░\e[0m \e[0;95m░░\e[0m   \e[0;35m░░\e[0m \e[0;35m░░\e[0m \e[0;35m░░\e[0m \e[0;35m░░\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m    \e[0;91m▓\e[0m  \e[0;91m▒\e[0m  \e[0;91m░\e[0m  \e[0;91m▓\e[0m      \e[0;95m▓\e[0m  \e[0;95m▒\e[0m  \e[0;95m░\e[0m    \e[0;95m▓\e[0m  \e[0;95m▒\e[0m    \e[0;35m▓\e[0m  \e[0;35m▒\e[0m  \e[0;35m░\e[0m  \e[0;35m▓\e[0m                     \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m                                                                \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[0m      \e[0;90m[\e[1;35mInfinity x White Devels Team\e[0;90m]\e[0m                                 \e[1;91m|\e[0m\n"
+    printf "\e[1;91m  |\e[1;31m+\e[0m                                                                \e[1;31m+\e[1;91m|\e[0m\n"
+    printf "\e[1;91m  \\\e[0;31m*\e[1;31m++\e[0;31m---------------------------------\e[1;31m++\e[1;91m*/\e[0m\n"
+    printf "\e[1;95m        Simple 'CLI' Webcam + GPS Capture via Link • v3.0\e[0m\n"
+    printf "\e[0;90m        [https://github.com/Adil-fayyaz/camphish-x]\e[0m\n\n"
 }
 dependencies() {
     if ! command -v php > /dev/null 2>&1; then
@@ -74,7 +80,7 @@ stop() {
         rm -f .monitor_pid
     fi
     rm -f sendlink ip.txt location_* LocationLog.log Log.log > /dev/null 2>&1
-    printf "\n\e[1;95m  My Cam - Created by Infinity x White Devels Team\e[0m\n"
+    printf "\n\e[1;95m  X Cam - Created by Infinity x White Devels Team\e[0m\n"
     exit 1
 }
 catch_ip() {
@@ -279,7 +285,7 @@ select_template() {
         printf "\e[1;97m  [02] Live YouTube TV\e[0m\n"
         printf "\e[1;97m  [03] Online Meeting\e[0m\n"
         printf "\e[1;35m  ------------------------------------------\e[0m\n"
-        read -p $'\n\e[1;91m  [My Cam] Choose template [01]: \e[0m' option_tem
+        read -p $'\n\e[1;91m  [X Cam] Choose template [01]: \e[0m' option_tem
         option_tem="${option_tem:-1}"
         case "$option_tem" in
             1|01) read -p $'\e[1;93m  [*] Festival name: \e[0m' fest_name;
@@ -302,7 +308,7 @@ choose_tunnel() {
         printf "\e[1;97m  [01] Serveo.net \e[0;90m(fast)\e[0m\n"
         printf "\e[1;97m  [02] localhost.run \e[0;90m(backup)\e[0m\n"
         printf "\e[1;35m  ------------------------------------------\e[0m\n"
-        read -p $'\n\e[1;91m  [My Cam] Choose tunnel [01]: \e[0m' option_server
+        read -p $'\n\e[1;91m  [X Cam] Choose tunnel [01]: \e[0m' option_server
         option_server="${option_server:-1}"
         case "$option_server" in
             1|01) serveo_tunnel; return ;;

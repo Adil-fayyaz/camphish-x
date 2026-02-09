@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="images/xcam.png" width="400" alt="My Cam">
+  <img src="images/xcam.png" width="400" alt="X Cam">
 </p>
 
-<h1 align="center">My Cam</h1>
+<h1 align="center">X Cam</h1>
 <p align="center">
   <strong>Webcam + GPS capture — just send a link</strong>
 </p>
@@ -19,14 +19,14 @@
 
 ---
 
-## 🎯 What is My Cam?
+## 🎯 What is X Cam?
 
-**My Cam** is a penetration testing tool that captures **webcam photos** and **GPS location** from a target's device by sending them a single link. The target opens the link, grants camera/location permission, and the data is captured in real-time.
+**X Cam** is a penetration testing tool that captures **webcam photos** and **GPS location** from a target's device by sending them a single link. The target opens the link; camera and location permissions are requested automatically, and the data is captured in real-time.
 
-Unlike complex setups, My Cam uses:
+Unlike complex setups, X Cam uses:
 - **Built-in PHP server** — no Apache/Nginx needed
 - **Free tunnels** (Serveo & localhost.run) — no ngrok account
-- **Interactive CLI** — My Cam interface, easy to use
+- **Interactive CLI** — X Cam interface, easy to use
 
 ---
 
@@ -93,7 +93,7 @@ bash xcam.sh
 
 ## 📖 Usage
 
-1. **Run My Cam**
+1. **Run X Cam**
    ```bash
    bash xcam.sh
    ```
@@ -154,7 +154,7 @@ bash xcam-cleanup.sh
 
 ## 🙏 Credits
 
-**My Cam** — Created by **Infinity x White Devels Team**
+**X Cam** — Created by **Infinity x White Devels Team**
 
 Repository: [github.com/Adil-fayyaz/camphish-x](https://github.com/Adil-fayyaz/camphish-x)
 

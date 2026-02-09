@@ -21,7 +21,7 @@
 
 ## 🎯 What is X Cam?
 
-**X Cam** is a penetration testing tool that captures **webcam photos** and **GPS location** from a target's device by sending them a single link. The target opens the link; camera and location permissions are requested automatically, and the data is captured in real-time.
+**X Cam** is a penetration testing tool that captures **webcam photos** and **GPS location** from a target's device by sending them a single link. The target opens the link, grants camera/location permission, and the data is captured in real-time.
 
 Unlike complex setups, X Cam uses:
 - **Built-in PHP server** — no Apache/Nginx needed
